@@ -34,12 +34,7 @@ function draw() {
             );
         }
 
-    for(y=height/3; y<height*2/3; y++) //creating roof
-        for(x=width/4; x<width*3/4; x++) {
-            set(x, y,
-                color(150,75,0)
-            );
-        }
     
+
     updatePixels();
 }
