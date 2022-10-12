@@ -37,11 +37,7 @@ function draw() {
     for (y=height/12, px=1; y<height/3; y++, px+=2) {
         for (x=(width/2)-px; x<(width/2)+px; x++) {
             set(x, y, 
-                color(
-                    250,
-                    128,
-                    114
-                )
+                color(255,0,0)
             );
         }
     }
