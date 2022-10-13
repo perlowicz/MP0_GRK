@@ -8,9 +8,7 @@ function draw() {
     //noprotect
     background(100);
     for(y=0; y<height; y++)
-        for(x=0; x<width; x++) {
-            set(x, y,
-                color(x/width*256));
-        }
+        for(x=0; x<width; x++)
+            set(x, y, color(x/width*256));
     updatePixels();
 }

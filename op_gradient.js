@@ -9,16 +9,17 @@ function draw() {
     for(y=0; y<height; y++)
         for(x=0; x<width; x++) {
 
-            var temp = (x+y) / (width+height);
+            var blueColor = ((x+y) / (width+height)) * 256;
             var secondTemp = x-width/2;
             var thirdTemp = y-height/2;
-            var final = sqrt(pow(secondTemp,2)+pow(thirdTemp,2));
+            var greenColor = sqrt(pow(secondTemp,2)+pow(thirdTemp,2));
+            var redColor = 255 - greenColor;
 
             set(x, y,
                 color(
-                    255-final,
-                    final,
-                    temp*256
+                    redColor,
+                    greenColor,
+                    blueColor
                 )
             );
         }
