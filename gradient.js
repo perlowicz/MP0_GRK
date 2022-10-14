@@ -1,7 +1,7 @@
 function setup() {
     createCanvas(800,600);
     noLoop();
-    frameRate(25);
+    // frameRate(25);
 }
 
 function draw() {
